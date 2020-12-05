@@ -1,0 +1,714 @@
+*{ margin: 0; padding: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif}
+body{
+    background: #eee;
+    height: 100vh;
+    overflow: none;
+    text-overflow: ellipsis;
+}
+/* a{
+    text-decoration: none;
+    color: #fff;
+} */
+.header{
+    margin: 0;
+    padding: 0;
+    background: #400040;
+    /* background: #ff4000; */
+    height: 110px;
+    width: 100%;
+}
+#logo{
+    width: 20%;
+    height: 110px;
+    float: left;
+}
+#logo img{
+    width: 60%;
+    /* height: 110px; */
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+#links{
+    overflow: hidden;
+    width: 80%;
+    height: 50px;
+    float: left;
+}
+#links ul{
+    list-style-type: none;
+    margin-right: 30px;
+}
+#links ul li{
+    padding: 0 1%;
+    float: right;
+    margin-left: 30px;
+    line-height: 30px;
+}
+#links ul li:hover{
+    background:#0a0442 ;
+    border-top: 3px solid #fff;
+}
+#links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+/* sign Up form */
+#links ul li form{
+    display: none;
+    position: absolute;
+    background: #0a0442 ;
+    margin-left: -35.5%;
+    padding: 1%;
+    box-sizing: border-box;
+    width: 40%;
+    border-radius: 5px;
+    border: 1px solid #800080;
+    /* box-shadow: 2px 2px 2px grey; */
+}
+#links ul li form table{
+    width: 100%;
+}
+#links ul li form table tr td{
+    height: 35px;
+    color: #fff;
+    width: 48%;
+    padding: 10px;
+}
+#links ul li form table tr td input{
+    border-radius: 3px;
+    padding-left: 2%;
+    outline: none;
+    border: 1px solid #800080;
+    width: 100%;
+    height: 30px;
+}
+#links ul li:hover form{
+    display: block;
+}
+#links ul li form input[type = submit]{
+    height:35px;
+    outline: none;
+    border: 1px solid #800080;
+    width: 48%;
+    background: #400040;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+#links ul li form input[type = submit]:hover{
+    color: #800080;
+    background: #fff;
+    cursor: pointer;
+}
+#links ul li form h3{
+    color: #fff;
+    padding: 2%;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+form #text{
+    width: 30% !important;
+}
+form #logText{
+    width: 35% !important;
+}
+/* End of signUp form */
+/* Login  form */
+.loginForm{
+    margin-left: -26.5% !important;
+    width: 30% !important;
+}
+.loginForm a:hover{
+    color: #800080 !important;
+}
+
+/* End of login form */
+/* Search Engine */
+#search form input{
+    border: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    width: 55%;
+    height: 35px;
+    padding-left: 2%;
+}
+#search form #btn-search{
+    width: 10%;
+    height: 35px;
+    background: #0a0442;
+    /* background: #b41034; */
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin-left: -10px;
+}
+#search form #btn-Cart{
+    width: 10%;
+    height: 35px;
+    background: #0a0442;
+    /* background: #b41034; */
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    /* margin-left: -10px;  */
+}
+#search form #btn-Cart:hover, #search form #btn-search:hover{
+    /* border: 1px solid #fff; */
+    background: #09002e;
+}
+#search form #btn-Cart a{
+    display: block;
+}
+#search #cart_count{
+    color: #400040;
+    /* margin-left: 3%; */
+    padding: 2% 5%;
+    background: #fff;
+    border-radius: 50%;
+}
+/* Delete form */
+#alertForm{
+    padding: 10px;
+    margin: 5% auto;
+    margin-left: 35%;
+    border-radius: 3px;
+    width: 30%;
+    min-height:30%;
+    color: #000;
+    background: #fff;
+    z-index: 999;
+    position: absolute;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.397);
+}
+#alertForm h4{
+    display: block;
+    font-size: 1.5rem;
+    line-height: 35px;
+    margin: 2%;
+    padding: 2%;
+}
+#alertForm p{
+    margin: 2%;
+    padding: 2%;
+}
+#alertForm button{
+    padding: 1%;
+    height: 30px;
+    width: 20%;
+    margin-left: 2%;
+    color: #fff;
+    align-content: flex-start;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+#alertForm #ok{
+    margin-left: 50%;
+    background: #f00;
+}
+#alertForm #ok:hover{
+    background: rgb(155, 0, 0);
+}
+#alertForm #can{
+    background: rgb(54, 54, 54);
+}
+#alertForm #can:hover{
+    background: rgb(31, 26, 26);
+}
+/* End of Delete FOrm */
+/* Cart Display */
+.cart{
+    width: 100%;
+    min-height: 500px;
+    padding: 1%;
+    box-sizing: border-box;
+    background: #fff;
+}
+.cart form table{
+    width: 100%;
+}
+.cart form table tr th{
+    padding-left: 1%;
+    background: #e6e6e6;
+    color: #666;
+    text-align: left;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+}
+.cart form table tr td{
+    font-size: 16px;
+    padding-left: 1.2%;
+    height: 60px;
+    line-height: 60px;
+}
+.cart form table tr td a{
+    text-decoration: none;
+    padding: 0 5%;
+    color: #000;
+}
+.cart form table tr td button a{
+    color: #fff;
+}
+.cart form table tr td #remove{
+    color: #0a0442;
+    font-weight: bolder;
+    font-size: 20px;
+    padding-left: 30%;
+
+}
+.cart form table tr td img{
+    padding-top: 3%;
+    width: 50px;
+    height: 45px;
+}
+.cart form table tr td #sub, #add{
+    font-size: 0.8;
+}
+.cart form button{
+    width: 180px;
+    height: 30px;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5 ease-in-out;
+}
+.cart form  #shopping{
+    background: rgb(0, 255, 0);
+}
+.cart form  #checkOut{
+    background: rgb(225, 0, 0);
+}
+.cart form button:hover{
+    background: #400040 !important;
+}
+.cart form table tr td span{
+    color: #400040;
+    
+}
+
+#search  a{
+    /* display: block; */
+    color: white;
+    text-decoration: none;
+}
+#navbar{
+    overflow: hidden;
+    width: 100%;
+    height: 50px;
+    background: #0a0442;
+}
+#navbar ul{
+    padding-left: 2%;
+    list-style-type: none;
+    /* margin-right: 30px; */
+}
+#navbar ul li{
+    text-transform: uppercase;
+    float: left;
+    padding: 1%;
+}
+#navbar ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+#navbar ul li:hover{
+    background:#400040;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+}
+/* Drop dow */
+#navbar ul li ul{
+    display: none;
+}
+#navbar ul li:hover ul{
+    background: #0a0442;
+    margin-top: 8px;
+    margin-left: -15px;
+    padding-left: 0%;
+    display: block;
+    width: 200px;
+    z-index: 999;
+    position: absolute;
+    box-shadow: 5px 5px 5px #2e2e2e;
+}
+#navbar ul li ul li{
+    text-transform: capitalize !important;
+    border: none !important;
+    float: none;
+    padding-left: 5%;
+    height: 25px;
+    line-height: 25px;
+}
+#navbar ul li ul li a{
+    display: block;
+}
+#navbar ul li ul li:hover{
+    border-top: 2px solid #fff !important;
+    background: #400040;
+    transition: .5;
+}
+
+/* body left */
+#bodyLeft{
+    width: 72%;
+    margin: 1%;
+    background: #fff;
+    float: left;
+    border-radius: 3px;
+    padding: 1%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    height: 500px;
+}
+#bodyLeft h2{
+    background: #400040;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    text-shadow: 5px 5px 5px #000;
+}
+#bodyLeft .not_found{
+    margin-top: 10%;
+    color: grey;
+    height: 45px;
+    line-height: 45px;
+}
+#bodyLeft h3{
+    background: #400040;
+    padding-left: 5%;
+    color: #fff;
+    margin-top: 1% ;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 3px;
+    /* text-align: center; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-shadow: 5px 5px 5px #000;
+    box-shadow: 3px 3px 3px #000;
+}
+#bodyLeft ul{
+    list-style-type: none;
+}
+#bodyLeft ul li{
+    width: 31%;
+    min-height: 365px;
+    border: 1px solid #ccc;
+    float: left;
+    border-radius: 3px;
+    margin-left: 1.5%;
+    margin-top: 10px;
+}
+#bodyLeft ul li a{
+    text-decoration: none;
+    color: #2e2e2e;
+    display: block;
+}
+#bodyLeft ul li a h4{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+}
+#bodyLeft ul li a #c_price{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+    /* font-size: 15px; */
+    font-weight: bold;
+    margin-top: 5px;
+    margin: 1% !important;
+    color: #400040 !important;
+}
+#bodyLeft ul li a  img{
+    width: 100%;
+    height: 270px;
+    margin-bottom: 10px;
+}
+#bodyLeft ul li a center button{
+    width: 30%;
+    height: 30px;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #400040;
+}
+#bodyLeft ul li a center button:hover{
+    background: #400040;
+}
+#bodyLeft ul li a center button:hover a{
+    color: #fff;
+}
+.not_found{
+    margin-top: 10%;
+    color: grey;
+    height: 45px;
+    line-height: 45px;
+
+}
+
+/* product buttons */
+#bodyLeft .p_btn{
+    width: 30%;
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+}
+#bodyLeft #view{
+    background: #0f0;
+}
+#bodyLeft #cart{
+    background: #f00;
+    color: #fff !important;
+}
+#bodyLeft #wish{
+    background: #fff;
+    border: 2px solid #400040;
+}
+#bodyLeft #wish a{
+    color: #400040 !important;
+}
+#bodyLeft #wish:hover a{
+    color: #fff !important;
+}
+#bodyLeft .p_btn:hover{
+    background: #400040 !important;
+}
+#bodyLeft .p_btn:hover a{
+    color: #fff !important;
+}
+#bodyLeft .p_btn a{
+    color: #fff !important;
+    font-weight: bold !important;
+}
+/* End of body left */
+/* 
+
+    --------------------------
+    Body right
+    -------------------------
+*/
+
+#bodyRight h3{
+    background: #400040;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+#bodyRight{
+    width: 25%;
+    margin: 1% 1% 1% 0%;
+    background: #fff;
+    float: left;
+    border-radius: 3px;
+    height: 500px;
+}
+.bodyRight ul{
+    list-style-type: none;
+}
+.bodyRight ul li{
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+    padding-left: 5%;
+}
+
+.bodyRight ul li a{
+    text-decoration: none;
+    color: #2e2e2e;
+    font-size: 14px;
+    font-weight: bold;
+}
+.bodyRight ul li a:hover{
+    text-decoration: underline;
+    color: #000;
+}
+.bodyRight{
+    padding-top: 1.3%;
+    margin-right: -2 !important;
+}
+.bodyRight h3{
+    margin-top: 2%;
+    background: grey !important;
+}
+/* Slider */
+#slider{
+    width: 100%;
+    height: 360px;
+}
+#slider img{
+    width: 100%;
+    height: 360px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+/* FOoter */
+#footer{
+    width: 100%;
+    border-radius: 3px;
+    height: 35px;
+    background: #400040;
+    margin-bottom: .1%;
+}
+#footer h4{
+    /* height: 40px; */
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+}
+#footer a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/* Product Details */
+#pro_img{
+    width: 40% ;
+    background: #fff;
+    float: left;
+    padding: 1%;
+    box-sizing: border-box;
+}
+#pro_img img{
+    width: 100%;
+    height: 450px;
+
+}
+#pro_img ul{
+    list-style-type: none;
+    margin-left: 15%;
+}
+#pro_img ul li{
+    float: left;
+}
+#pro_img ul li img{
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+}
+#pro_feature{
+    max-height: 455px;
+    /* background: #fff; */
+    width: 60% ;
+    float: left;
+    padding: 1%;
+    box-sizing: border-box;
+}
+#pro_feature h3{
+    margin-top: 10px;
+    text-align: center;
+    height: 35px;
+    /* border-bottom: 1px solid #6666; */
+}
+#pro_feature p{
+    margin-left: 5%;
+    font-size: 20px;
+    margin-bottom: -15px;
+    margin-top: 1%;
+    font-weight: bold;
+    color: #400040;
+}
+#pro_feature ul{
+    margin-top: 20px;
+    width: 45%;
+    float: left;
+    margin-left: 5%;
+}
+#pro_feature li{
+    margin-left: 5%;
+    /* list-style-type: circle; */
+    height: 35px;
+    line-height: 35px;
+}
+#pro_feature li span{
+    color: #400040;
+    font-weight: bold;
+    margin-right: 1%;
+}
+#pro_feature center form button{
+    width: 180px;
+    height: 30px;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+}
+#pro_feature center form #buy{
+    background: rgb(0, 255, 0);
+}
+#pro_feature center form #cart{
+    background: rgb(255, 0, 0);
+}
+#pro_feature center form button:hover{
+    background:  #400040 !important;
+    cursor: pointer;
+}
+#pro_feature center h3{
+    margin-top: 10%;
+    margin-bottom: 20px;
+}
+#sim_pro{
+    background: #fff;
+    width: 100%;
+    height: 350px;
+    padding-top: 20px;
+}
+#sim_pro h3{
+    background: #400040;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    width: 98%;
+    padding-left: 2%;
+}
+#sim_pro ul{
+    list-style-type: none;
+}
+#sim_pro ul li{
+    margin-top: 2%;
+    width: 180px;
+    min-height: 250px;
+    margin-left: 20px;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 0.5%;
+
+}
+#sim_pro ul li:hover{
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px  #400040d0;
+}
+#sim_pro ul li a img{
+    width: 100%;
+    height: 180px;
+}
+#sim_pro ul li a {
+    color: #400040;
+    text-decoration: none;
+}
+#sim_pro ul li a p{
+    text-align: center;
+    font-size: 15px;
+}
