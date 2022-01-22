@@ -6,4 +6,12 @@ Online Shop made with PHP &amp; MySQL
 2. Execute the queries in el_dorado.sql in it. 
 PATH to .sql (database/el_dorado.sql)
 
-<!-- Feel Free to make modifications and cointributions to this project. -->
+## Tech Stack
+1. HTML
+2. CSS /Bootstrap
+3. JavaScript /jQuery
+4. Ajax
+5. PHP
+6. MySQL
+
+This software is registered under MIT LINCENSE. [./LINCENSE.md]
