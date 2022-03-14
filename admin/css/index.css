@@ -1,0 +1,235 @@
+*{ margin: 0; padding: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif}
+body{
+    background: #400040;
+    padding: 1%;
+    box-sizing: border-box;
+}
+#header{
+    margin-top: 10px;
+    background: #800080;
+    height: 50px;
+    width: 100%;
+    border-radius: 3px;
+}
+#bodyLeft{
+    width: 24%;
+    height: 500px;
+    background: #400040;
+    margin: 20px 10px 10px 0px;
+    border-radius: 3px;
+    float: left;
+}
+#bodyLeft h3{
+    background: #800080;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 3px;
+    text-align: center;
+}
+#bodyLeft ul{
+    list-style-type: none;
+    margin-top: 10px;
+}
+#bodyLeft ul li{
+    border-radius: 3px;
+    height: 30px;
+    line-height: 30px;
+
+}
+#bodyLeft ul li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding-left: 3%;
+}
+#bodyLeft ul li a:hover{
+    background: #800080;
+}
+/* Body Right */
+#bodyRight{
+    width: 75.2%;
+    min-height: 025rem;
+    background: #800080;
+    margin: 20px 0px 10px 0px;
+    padding-bottom: 2%;
+    border-radius: 3px;
+    float: left;
+    overflow-x: auto;
+}
+#bodyRight h3{
+    background: #800080;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 3px;
+    text-align: center;
+    border-bottom: 2px solid #400040;
+}
+/* Delete form */
+#bodyRight #alertForm{
+    padding: 10px;
+    margin: 5% auto;
+    margin-left: 15%;
+    border-radius: 3px;
+    width: 30%;
+    min-height:40%;
+    color: #000;
+    background: #fff;
+    z-index: 999;
+    position: absolute;
+    box-shadow: 2px 2px 2px #000;
+}
+#bodyRight #alertForm h4{
+    display: block;
+    font-size: 1.5rem;
+    line-height: 35px;
+    margin: 2%;
+    padding: 2%;
+}
+#bodyRight #alertForm p{
+    margin: 2%;
+    padding: 2%;
+}
+#bodyRight #alertForm button{
+    width: 20%;
+    margin-left: 2%;
+    align-content: flex-start;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+#bodyRight #alertForm #ok{
+    margin-left: 50%;
+    background: #f00;
+}
+#bodyRight #alertForm #ok:hover{
+    background: rgb(155, 0, 0);
+}
+#bodyRight #alertForm #can{
+    background: rgb(54, 54, 54);
+}
+#bodyRight #alertForm #can:hover{
+    background: rgb(31, 26, 26);
+}
+/* End of Delete FOrm */
+#bodyRight #view_pro{
+    width: 100%;
+}
+#bodyRight #view_pro tr th{
+    text-align: left;
+    padding: 0%;
+    padding-left: 2%;
+    font-size: 17px;
+    background: #400040;
+}
+#bodyRight #view_pro td img{
+    width: 40px;
+    height: 40px;
+}
+#bodyRight #view_pro tr td{
+    min-width: 200px;
+    padding-left: 2% !important;  
+    height: 35px;
+}
+#scroll{
+    width: 100vw;
+}
+#bodyRight form table{
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+}
+#bodyRight form table tr th{
+    color: #fff;
+    text-align: left;
+    background: #400040;
+    height: 40px;
+    font-size: 20px;
+    padding: 0% 2% 0% 2%;
+    box-sizing: border-box;
+    /* width: 100%; */
+}
+#bodyRight form table tr td a{
+    text-decoration: none;
+    color: #fff;
+    border-radius: 4px;
+}
+#bodyRight form table tr td #del{
+    padding: 4px;
+    background: rgb(148, 0, 0);
+    margin-right: 10px;
+}
+#bodyRight form table tr td #del:hover{
+    background: rgb(228, 2, 2);
+}
+#bodyRight form table tr td #edi{
+    padding: 4px 8px 4px 8px;
+    background: rgb(0, 121, 0);
+    margin-left: 10px;
+}
+#bodyRight form table tr td #edi:hover{
+    background: rgb(0, 240, 0);
+}
+
+#bodyRight form table tr td{
+    color: #fff;
+    padding-left:17px;
+    text-align: left;
+    text-align: left;
+    width: 50%;
+    height: 35px;
+}
+#bodyRight form table tr td input{
+    width: 100%;
+    height: 30px;
+    padding-left: 2%;
+    border-radius: 3px;
+    margin-top: 10px;
+    border: 1px solid #fff;
+}
+#bodyRight form table tr td select{
+    width: 100%;
+    height: 30px;
+    padding-left: 2%;
+    margin-top: 10px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+}
+#bodyRight form button{
+    width: 300px;
+    background: #800080 ;
+    border: 2px solid #400040;
+    border-radius: 3px;
+    height: 30px ;
+    margin: 20px auto;
+    color: #fff ;
+}
+#bodyRight form button:hover{
+    background: #400040;
+}
+
+#add-cat{
+    margin-top: 20px;
+    border-top: 2px solid #400040;
+}
+
+/* Products view */
+
+
+/* FOoter */
+#footer{
+    width: 100%;
+    border-radius: 3px;
+    height: 35px;
+    background: #fff;
+}
+#footer h4{
+    /* height: 40px; */
+    line-height: 35px;
+    text-align: center;
+    color: #400040;
+}
