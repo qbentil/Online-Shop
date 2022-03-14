@@ -16,10 +16,20 @@ PATH to .sql (database/el_dorado.sql)
 
 ## UI
 
+<div style = "diplay: flex; justify-content: space-around">
+<div>
 ![image](https://user-images.githubusercontent.com/55560024/158137556-7ebd8a4a-ff19-4db0-8d94-9d542ef9ad28.png)
+</div>
+<div>
 ![image](https://user-images.githubusercontent.com/55560024/158137590-9d44f284-d5e5-4b20-911b-8a183fb68138.png)
+</div>
+<div>
 ![image](https://user-images.githubusercontent.com/55560024/158137601-310206fe-327a-4686-9e7b-f9166b2c3af9.png)
+</div>
+<div>
 ![image](https://user-images.githubusercontent.com/55560024/158137615-5fd7c59d-aa09-4114-8e70-1908aea579bf.png)
+</div>
+</div>
 
 
 This software is registered under MIT LINCENSE. [./LINCENSE.md]
